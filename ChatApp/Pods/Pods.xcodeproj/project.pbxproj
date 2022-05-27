@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,14 +37,14 @@
 		8030002BBB82126CDF2189B1BE43E8F2 /* CLTypingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CLTypingLabel.swift; path = Pod/Classes/CLTypingLabel.swift; sourceTree = "<group>"; };
 		80C1B6ADE843AA46135CE2255028F887 /* Pods-ChatApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChatApp-umbrella.h"; sourceTree = "<group>"; };
 		9468BA24DCB5E08A24F65C3B045162BA /* CLTypingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CLTypingLabel.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A69D385C15570CA185260AD937911A4C /* CLTypingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLTypingLabel-umbrella.h"; sourceTree = "<group>"; };
 		AF011A981761287B3276BCBA6985C2BB /* Pods-ChatApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChatApp-dummy.m"; sourceTree = "<group>"; };
 		C5ABAF63D10F5E127F096A2FF2FB8AB1 /* Pods-ChatApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChatApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CE8765B3053874E73AFDC78B5D6B4396 /* CLTypingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CLTypingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8765B3053874E73AFDC78B5D6B4396 /* CLTypingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CLTypingLabel.framework; path = CLTypingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60FAA85B80F876FA108836DC1ED8DB8 /* CLTypingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLTypingLabel-prefix.pch"; sourceTree = "<group>"; };
 		EAF567E6539A5D16DAB569F274C89C97 /* CLTypingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CLTypingLabel-dummy.m"; sourceTree = "<group>"; };
-		F1B8738E5AF68B43CE2044E35F9A9CDF /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B8738E5AF68B43CE2044E35F9A9CDF /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChatApp.framework; path = "Pods-ChatApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F495233B677AA4BB090B8C4290C85F09 /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD89D3FED2CDFE26ECA8380BD9B7A12 /* Pods-ChatApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChatApp-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +101,7 @@
 				8030002BBB82126CDF2189B1BE43E8F2 /* CLTypingLabel.swift */,
 				A319DDA6731FF9AB0D84AABF3B60D382 /* Support Files */,
 			);
+			name = CLTypingLabel;
 			path = CLTypingLabel;
 			sourceTree = "<group>";
 		};
@@ -230,7 +231,7 @@
 				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -407,7 +408,6 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
@@ -541,7 +541,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
