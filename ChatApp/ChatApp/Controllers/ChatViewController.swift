@@ -15,10 +15,16 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
     
+    var messages: [Message] = [
+        Message(sender: "alex@yandex.ru", body: "Hey!"),
+        Message(sender: "diana@yandex.ru", body: "Hello!"),
+        Message(sender: "serega@yandex.ru", body: "What's up?")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        title = "⚡️FlashChat"
+        title = K.appName
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {

@@ -17,7 +17,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "⚡️FlashChat"
+        title = K.appName
     }
     
     @IBAction func registerPressed(_ sender: UIButton) {
@@ -27,7 +27,7 @@ class RegisterViewController: UIViewController {
                 if let error = error {
                     print(error.localizedDescription)
                 } else {
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }
             }
         }
