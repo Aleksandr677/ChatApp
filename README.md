@@ -27,3 +27,4 @@ Part 2. Stack.
 4. Swift Package Manager
 5. MVC
 6. Custom cells (Xib)
+7. Multithreading
